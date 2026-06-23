@@ -36,8 +36,6 @@ spec:
               value: "-Xms512m -Xmx512m"
             - name: xpack.security.enabled
               value: "false" # Disabled security for development purposes
-            - name: ES_JAVA_OPTS
-              value: "-XX:-UseContainerSupport" # i added this
           ports:
             - containerPort: 9200
           resources:
